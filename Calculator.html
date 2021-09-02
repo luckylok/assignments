@@ -1,0 +1,121 @@
+
+<center>
+<input type="text" name="" placeholder="enter firstnumber  " /> </br> </br>
+<input type="text" name="" placeholder="enter second number  " /></br> </br>
+
+<button id="add"> + </button>
+<button id="sub"> - </button>
+<button id="mul"> * </button>
+<button id="div"> /</button>
+<button id="pow"> ** </button>
+<button id="mod"> %  </button>
+<button id="clear"> C </button>
+<h1> result value will be here </h1>
+</center>
+
+<style type="text/css">
+	button { background: red; color: white; padding: 10px; }
+	input { border:2px solid red; background: lightgreen; }
+</style>
+
+<script type="text/javascript">
+	document.getElementById("add").addEventListener("click",add_fun)
+	function add_fun()
+	{
+
+		var f_num =document.getElementsByTagName('input')[0].value // "10"
+	    var s_num =document.getElementsByTagName('input')[1].value // "5"
+		// addition
+		var result = parseInt(f_num)+parseInt(s_num)
+		//alert(result)
+		document.getElementsByTagName("h1")[0].innerHTML="result is .."+ result
+		// clear inouts 
+		document.getElementsByTagName('input')[0].value=''
+		document.getElementsByTagName('input')[1].value=''
+	}
+		document.getElementById("sub").addEventListener("click",sub_fun)
+	function sub_fun()
+	
+	{
+
+		var f_num =document.getElementsByTagName('input')[0].value // "10"
+	    var s_num =document.getElementsByTagName('input')[1].value // "5"
+		// addition
+		var result = parseInt(f_num)-parseInt(s_num)
+		//alert(result)
+		document.getElementsByTagName("h1")[0].innerHTML="result is .."+ result
+		// clear inouts 
+		document.getElementsByTagName('input')[0].value=''
+		document.getElementsByTagName('input')[1].value=''
+	}
+	document.getElementById("mul").addEventListener("click",mul_fun)
+	function mul_fun()
+	
+	{
+
+		var f_num =document.getElementsByTagName('input')[0].value // "10"
+	    var s_num =document.getElementsByTagName('input')[1].value // "5"
+		// addition
+		var result = parseInt(f_num)*parseInt(s_num)
+		//alert(result)
+		document.getElementsByTagName("h1")[0].innerHTML="result is .."+ result
+		// clear inouts 
+		document.getElementsByTagName('input')[0].value=''
+		document.getElementsByTagName('input')[1].value=''
+	}
+	document.getElementById("div").addEventListener("click",div_fun)
+	function div_fun()
+	
+	{
+
+		var f_num =document.getElementsByTagName('input')[0].value // "10"
+	    var s_num =document.getElementsByTagName('input')[1].value // "5"
+		// addition
+		var result = parseInt(f_num)/parseInt(s_num)
+		//alert(result)
+		document.getElementsByTagName("h1")[0].innerHTML="result is .."+ result
+		// clear inouts 
+		document.getElementsByTagName('input')[0].value=''
+		document.getElementsByTagName('input')[1].value=''
+	}
+	document.getElementById("pow").addEventListener("click",pow_fun)
+	function pow_fun()
+	
+	{
+
+		var f_num =document.getElementsByTagName('input')[0].value // "10"
+	    var s_num =document.getElementsByTagName('input')[1].value // "5"
+		// addition
+		var result = parseInt(f_num)**parseInt(s_num)
+		//alert(result)
+		document.getElementsByTagName("h1")[0].innerHTML="result is .."+ result
+		// clear inouts 
+		document.getElementsByTagName('input')[0].value=''
+		document.getElementsByTagName('input')[1].value=''
+	}
+	document.getElementById("mod").addEventListener("click",mod_fun)
+	function mod_fun()
+	
+	{
+
+		var f_num =document.getElementsByTagName('input')[0].value // "10"
+	    var s_num =document.getElementsByTagName('input')[1].value // "5"
+		// // addition
+		// var result = parseInt(f_num)%parseInt(s_num)
+		// //alert(result)
+		// document.getElementsByTagName("h1")[0].innerHTML="result is .."+ result
+		// clear inouts 
+		document.getElementsByTagName('input')[0].value=''
+		document.getElementsByTagName('input')[1].value=''
+	}
+	document.getElementById("clear").addEventListener("click",clear_fun)
+	function clear_fun()
+{
+	var f_num =document.getElementsByTagName('input')[0].value // "10"
+	var s_num =document.getElementsByTagName('input')[1].value // "5"
+
+
+	document.getElementsByTagName('input')[0].value=''
+	document.getElementsByTagName('input')[1].value=''
+}
+</script>
